@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/home_tab_2_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No favorites"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorSearchIcon"
+        android:textSize="17dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/home_tab_2_fav_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite tools you like to fill out this list"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorSearchIcon"
+        android:textSize="17dp"
+        android:layout_below="@+id/home_tab_2_fav"
+        />
+
+</RelativeLayout>
