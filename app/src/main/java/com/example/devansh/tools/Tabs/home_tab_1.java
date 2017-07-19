@@ -36,7 +36,7 @@ public class home_tab_1 extends Fragment {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                fragmentManager.beginTransaction().addToBackStack(null).add(R.id.home_frame,new tool_view()).commit();
+                fragmentManager.beginTransaction().addToBackStack(null).setCustomAnimations(R.anim.slide_in_up,R.anim.slide_out_down).add(R.id.home_frame,new tool_view()).commit();
             }
         });
         return view;
