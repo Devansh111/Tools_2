@@ -27,6 +27,8 @@
         <item name="searchHintIcon">@null</item>
         <!-- The hint text that appears when the user has not typed anything -->
         <item name="queryHint">Tools Search...</item>
+        <item name="android:textColorHint">@color/colorSearchIcon</item>
+        <item name="closeIcon">@drawable/cancel</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

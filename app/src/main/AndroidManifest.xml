@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.devansh.tools">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activities.toolbox"
+            android:name=".Activities.Toolbox"
             android:label="@string/title_activity_toolbox"
             android:parentActivityName=".Activities.home"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">

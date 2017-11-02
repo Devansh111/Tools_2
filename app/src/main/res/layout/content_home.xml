@@ -22,8 +22,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="@color/colorSearchIcon"
+        android:background="@color/colorLightGrey"
         app:theme="@style/SearchViewStyle"
+
         />
 
     <android.support.design.widget.TabLayout

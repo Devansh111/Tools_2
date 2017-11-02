@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground">
+    android:background="@color/colorBackground"
+    android:clickable="true">
 
     <include
         android:id="@+id/add_tool_pricing_include"
@@ -41,6 +42,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
+        android:maxLines="1"
+        android:inputType="number"
         />
     <TextView
         android:id="@+id/add_tool_pricing_per_day"
@@ -59,7 +62,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/add_tool_pricing_per_day"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:inputType="number"/>
     <TextView
         android:id="@+id/add_tool_pricing_deposit"
         android:layout_width="wrap_content"
@@ -80,7 +85,9 @@
         android:layout_below="@+id/add_tool_pricing_per_day"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:layout_toRightOf="@+id/add_tool_pricing_per_day_et"/>
+        android:layout_toRightOf="@+id/add_tool_pricing_per_day_et"
+        android:maxLines="1"
+        android:inputType="number"/>
     <CheckBox
         android:id="@+id/add_tool_pricing_terms_cond"
         android:layout_width="wrap_content"
@@ -105,7 +112,7 @@
         android:layout_height="60dp"
         android:background="@color/colorTab"
         android:textStyle="bold"
-        android:textSize="12sp"
+        android:textSize="14sp"
         android:text="Finish"
         android:textColor="@color/colorBackground"
         />

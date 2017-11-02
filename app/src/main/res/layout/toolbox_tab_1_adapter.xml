@@ -1,27 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground">
 
     <ImageView
-        android:id="@+id/adapter_tool_image"
+        android:id="@+id/adapter_toolbox_image"
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:src="@drawable/maxresdefault"
         android:scaleType="fitXY"/>
     <ImageView
-        android:id="@+id/adapter_tool_favourites"
+        android:id="@+id/adapter_toolbox_favourites"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_margin="15dp"
         android:src="@drawable/like"
         />
-    <TextView
-        android:id="@+id/adapter_tool_name"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/adapter_toolbox_remove"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/adapter_tool_image"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/close"
+        />
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/adapter_toolbox_rl"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/colorTab"-->
+        <!--android:alpha="0.9"-->
+        <!--android:layout_above="@+id/adapter_toolbox_name">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/adapter_toolbox_rl_text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:textSize="22sp"-->
+            <!--android:padding="15dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/colorBackground"-->
+            <!--android:text="Currently Rented Out"/>-->
+
+    <!--</RelativeLayout>-->
+    <TextView
+        android:id="@+id/adapter_toolbox_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adapter_toolbox_image"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:text="TS 800 STIHL Cutquik"
@@ -30,10 +60,10 @@
         android:textSize="17sp"
         />
     <TextView
-        android:id="@+id/adapter_tool_price"
+        android:id="@+id/adapter_toolbox_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/adapter_tool_image"
+        android:layout_below="@+id/adapter_toolbox_image"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:layout_alignParentRight="true"
@@ -43,10 +73,10 @@
         android:textSize="17sp"
         />
     <TextView
-        android:id="@+id/adapter_tool_distance"
+        android:id="@+id/adapter_toolbox_distance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/adapter_tool_price"
+        android:layout_below="@+id/adapter_toolbox_price"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
         android:layout_alignParentRight="true"
@@ -56,10 +86,10 @@
         android:textSize="17sp"
         />
     <RatingBar
-        android:id="@+id/adapter_tool_rating"
+        android:id="@+id/adapter_toolbox_rating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/adapter_tool_name"
+        android:layout_below="@+id/adapter_toolbox_name"
         android:layout_marginLeft="10dp"
         android:isIndicator="true"
         android:numStars="5"
@@ -68,5 +98,6 @@
         android:stepSize="1"
         style="?android:attr/ratingBarStyleSmall"
         />
+
 
 </RelativeLayout>

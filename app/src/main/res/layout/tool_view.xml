@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground">
+    android:background="@color/colorBackground"
+    android:clickable="true">
 
     <include
         android:id="@+id/tool_view_include"
@@ -476,6 +477,18 @@
             android:layout_marginLeft="20dp"
             android:layout_below="@+id/tool_view_price"
             android:text="$25 refundable"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            />
+        <TextView
+            android:id="@+id/tool_view_deposit_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/tool_view_price"
+            android:layout_toRightOf="@+id/tool_view_deposit"
+            android:text="refundable"
             android:textSize="14sp"
             android:textColor="@color/colorBlack"
             />

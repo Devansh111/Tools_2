@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
+
         <include
             android:id="@+id/profile_include"
             android:layout_height="wrap_content"
@@ -277,5 +278,10 @@
 
 
     </RelativeLayout>
-
+    <FrameLayout
+        android:id="@+id/profile_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.devansh.tools.Fragments.profile_rental_history"
+       />
 </android.support.constraint.ConstraintLayout>

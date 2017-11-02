@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/adapter_renters_tool_image"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/maxresdefault"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/adapter_renters_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/adapter_renters_tool_image"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="David Johnson"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/adapter_renters_tool_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/adapter_renters_tool_image"
+        android:layout_below="@+id/adapter_renters_name"
+        android:layout_marginLeft="10dp"
+        android:text="STIHL Concrete Saw"
+        android:textColor="@color/colorSearchIcon"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/adapter_renters_tool_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/adapter_renters_tool_image"
+        android:layout_below="@+id/adapter_renters_tool_name"
+        android:layout_marginLeft="10dp"
+        android:text="March 25th, 2017"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

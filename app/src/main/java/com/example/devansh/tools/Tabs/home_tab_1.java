@@ -3,11 +3,13 @@ package com.example.devansh.tools.Tabs;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.widget.SearchView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.example.devansh.tools.Adapters.home_tab_1_lv;
 import com.example.devansh.tools.Fragments.tool_view;
@@ -36,7 +38,9 @@ public class home_tab_1 extends Fragment {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                fragmentManager.beginTransaction().addToBackStack(null).setCustomAnimations(R.anim.slide_in_up,R.anim.slide_out_down).add(R.id.home_frame,new tool_view()).commit();
+                fragmentManager.beginTransaction().addToBackStack(null).
+                        setCustomAnimations(R.anim.slide_in_up,R.anim.slide_out_down).
+                        add(R.id.home_frame,new tool_view()).commit();
             }
         });
         return view;
